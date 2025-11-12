@@ -1,0 +1,85 @@
+.home-component {
+  width: 100vw;
+  height: 100vh;
+  background: #0b1120;
+}
+
+.nav-bar {
+  background: #0b1527;
+  height: 110px;
+  width: 100vw;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.history-icon {
+  color: aliceblue;
+  opacity: 0.7;
+}
+
+.history-icon:hover {
+  opacity: 0.9;
+}
+
+.nav-left h3 {
+  margin-top: 16px;
+  font-weight: 550;
+  color: #ffffffcc;
+  letter-spacing: 1.8px;
+}
+
+.nav-left h3:hover {
+  color: white;
+}
+
+.nav-right p {
+  margin-top: 13px;
+}
+
+.meet-container {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.left-panel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.left-panel input {
+  padding: 10px;
+  border-radius: 8px;
+}
+.left-panel input:hover {
+  border: 2px solid rgb(221, 164, 221);
+}
+
+.left-panel Button {
+  border-radius: 8px;
+}
+
+.left-panel h2 {
+  color: oklch(0.932 0.032 255.585);
+  letter-spacing: 1.3px;
+}
+
+.right-panel {
+  display: flex;
+  align-items: center;
+}
+
+.right-panel img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}

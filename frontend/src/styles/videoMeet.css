@@ -1,0 +1,245 @@
+.xyz {
+  height: 100vh;
+  background-color: #0b1120;
+}
+.videomeet-container {
+  padding: 20px 10px;
+}
+
+.videomeet-container h2 {
+  color: oklch(0.932 0.032 255.585);
+}
+
+.username-btn {
+  margin: 14px 0 14px 0;
+
+  display: flex;
+  gap: 10px;
+}
+
+.username-btn input {
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.username-btn button {
+  border-radius: 8px;
+}
+
+.meet-video video {
+  display: inline;
+  height: 70vh;
+  margin-top: 20px;
+  /* width: 64vw; */
+  border-radius: 5px;
+}
+
+.meetVideoContainer {
+  position: relative;
+  height: 100vh;
+  background-color: #0b1120;
+}
+
+.meetuser-video {
+  display: inline;
+  height: 25vh;
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 15px 15px;
+  border-radius: 10px;
+  /* border: 1px solid rgb(86, 82, 82, 0.6); */
+}
+
+.button-containers {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  text-align: center;
+}
+
+.button-containers svg {
+  font-size: 2.5rem;
+}
+
+/* .conference-view {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.conference-view > div > video {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 50vh;
+  min-width: 30vw;
+  border-radius: 10px;
+} */
+
+.conference-view {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 videos per row */
+  gap: 16px; /* spacing between participants */
+  padding: 10px;
+}
+
+.conference-view video {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.conference-view {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Each tile wrapper */
+.video-tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  background-color: #000;
+}
+
+/* Video style */
+.user-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Username label */
+.username-overlay {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  padding: 4px 10px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  backdrop-filter: blur(2px);
+  letter-spacing: 0.3px;
+}
+
+.chat-room {
+  position: absolute;
+  height: 90vh;
+  right: 0;
+  background: #1a1a1a;
+  border-radius: 10px;
+  width: 30vw;
+  bottom: 10vh;
+  padding-inline: 20px;
+  border: 1px solid rgb(79, 78, 78);
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 81vh;
+  max-height: 90vh;
+}
+
+.chatting-display {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 99%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  color: #fff;
+  scrollbar-color: #555 #1e1e1e;
+}
+
+.chatmsg-box {
+  border: 1px solid rgb(172, 168, 168, 0.1);
+  border-radius: 10px;
+  background: #242323;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.chat-user {
+  color: #99daf2;
+  font-style: italic;
+  opacity: 0.7;
+  font-size: small;
+  margin: 4px 0 2px 5px;
+}
+.chat-msg {
+  color: #fff;
+  margin: 0 0 0 5px;
+  opacity: 0.7;
+}
+
+.chatting-area {
+  position: absolute;
+  bottom: 0;
+  margin: 14px 0 14px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.chatting-area input {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #242323;
+  border: 1px solid rgb(172, 168, 168, 0.1);
+  color: #fff;
+}
+
+@media (min-width: 1450px) {
+  .chatting-area input {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .chatting-area input {
+    width: 150px;
+  }
+}
+
+.chatting-area button {
+  border-radius: 100%;
+}
+
+.send-icon {
+  border: 1px solid rgb(172, 168, 168, 0.1);
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242323;
+}
+
+.send-icon:hover {
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.no-chatmessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.videomeet-icons {
+  opacity: 0.8;
+}
+
+.videomeet-icons:hover {
+  opacity: 1;
+}
