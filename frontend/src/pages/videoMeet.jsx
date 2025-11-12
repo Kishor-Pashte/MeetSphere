@@ -14,8 +14,9 @@ import StopScreenShareIcon from "@mui/icons-material/StopScreenShare";
 import ChatIcon from "@mui/icons-material/Chat";
 import Fab from "@mui/material/Fab";
 import SendIcon from "@mui/icons-material/Send";
+import server from "../environment";
 
-const server_url = process.env.server_url;
+const server_url = server;
 var connections = {};
 
 const peerConfigConnections = {

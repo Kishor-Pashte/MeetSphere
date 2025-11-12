@@ -3,6 +3,7 @@ import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { IconButton } from "@mui/material";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import server from "../environment";
 
 import HomeIcon from "@mui/icons-material/Home";
 import "../styles/history.css";
@@ -50,7 +51,7 @@ export default function History() {
     try {
       const token = localStorage.getItem("token");
       const res = await fetch(
-        `http://localhost:8000/api/v1/users/delete_activity/${meetingId}?token=${token}`,
+        `${server}/api/v1/users/delete_activity/${meetingId}?token=${token}`,
         {
           method: "DELETE",
         }
