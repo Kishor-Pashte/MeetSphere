@@ -69,90 +69,62 @@ MeetSphere is designed to provide a secure and intuitive platform for online mee
       cd backend
       npm run dev
 
-
   - **Start the frontend development server:**
       cd frontend
       npm start
 
-
     Open http://localhost:3000 in your browser.
 
-  ---
+---
 
-  Usage
+## Usage
+   - Register or login to the platform.
+   - Enter a username to join the lobby.
+   - Enter a meeting code and click Connect to join a video conference room.
+   - Use video, mic, screen sharing, and chat features as needed.
+   - Share your unique room URL to invite others.
+   - Track your meeting history, delete calls if needed, and safely logout.
 
-Register or Login to the platform.
+---
 
-Enter a username to join the lobby.
-
-Enter a meeting code and click Connect to join a video conference room.
-
-Use video, mic, screen sharing, and chat features as needed.
-
-Share your unique room URL to invite others.
-
-Track your meeting history, delete calls if needed, and safely logout.
-
-  ---
-
-Project Structure
+## Project Structure
 
 meetsphere/
 │
 ├── backend/
-│   ├── controllers/     # API controllers for handling requests
-│   ├── models/          # MongoDB models using Mongoose
-│   ├── routes/          # Express routes
-│   ├── app.js           # Express server setup
-│   └── config/          # Database & auth configurations
+│   ├── controllers/  # API controllers for handling requests
+│   ├── models/       # MongoDB models using Mongoose
+│   ├── routes/       # Express routes
+│   ├── app.js        # Express server setup
+│   └── config/       # Database & auth configurations
 │
 ├── frontend/
 │   ├── src/
-│   │   ├── components/  # Reusable React components
-│   │   ├── pages/       # Pages like Lobby, Meeting Room, History
-│   │   ├── context/     # React Context API for state management
-│   │   ├── utils/       # Utility/helper functions
-│   │   └── App.js       # Main React app entry
+│   │   ├── components/ # Reusable React components
+│   │   ├── pages/      # Pages like Lobby, Meeting Room, History
+│   │   ├── context/    # React Context API for state management
+│   │   ├── utils/      # Utility/helper functions
+│   │   └── App.js      # Main React app entry
 │   └── package.json
 │
-└── README.md            # Project documentation
+└── README.md  # Project documentation
 
 ---
 
-Future Enhancements
-
-Improve UI/UX for mobile devices.
-
-Add recording functionality for meetings.
-
-Enable reactions and file sharing during calls.
-
-Push notifications for messages or call alerts.
-
-Analytics/dashboard to track meeting statistics.
+## Acknowledgements
+   - React.js – Frontend framework
+   - Node.js – Backend runtime
+   - Express.js – Web framework for Node.js
+   - MongoDB – NoSQL database
+   - WebRTC – Real-time communication API
+   - Material-UI – UI component library
+   - Inspired by modern video conferencing apps like Zoom and Google Meet
 
 ---
+ 
 
-Acknowledgements
 
-React.js
- – Frontend framework
 
-Node.js
- – Backend runtime
 
-Express.js
- – Web framework for Node.js
-
-MongoDB
- – NoSQL database
-
-WebRTC
- – Real-time communication API
-
-Material-UI
- – UI component library
-
-Inspired by modern video conferencing apps like Zoom and Google Meet
 
   
