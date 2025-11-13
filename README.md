@@ -92,22 +92,23 @@ Open http://localhost:3000 in your browser.
 meetsphere/
 │
 ├── backend/
-│   ├── controllers/  # API controllers for handling requests
-│   ├── models/       # MongoDB models using Mongoose
-│   ├── routes/       # Express routes
-│   ├── app.js        # Express server setup
-│   └── config/       # Database & auth configurations
+│ ├── controllers/ # API controllers for handling requests
+│ ├── models/ # MongoDB models using Mongoose
+│ ├── routes/ # Express routes
+│ ├── app.js # Express server setup
+│ └── config/ # Database & auth configurations
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── components/ # Reusable React components
-│   │   ├── pages/      # Pages like Lobby, Meeting Room, History
-│   │   ├── context/    # React Context API for state management
-│   │   ├── utils/      # Utility/helper functions
-│   │   └── App.js      # Main React app entry
-│   └── package.json
+│ ├── src/
+│ │ ├── components/ # Reusable React components
+│ │ ├── pages/ # Pages like Lobby, Meeting Room, History
+│ │ ├── context/ # React Context API for state management
+│ │ ├── utils/ # Utility/helper functions
+│ │ └── App.js # Main React app entry
+│ └── package.json
 │
-└── README.md  # Project documentation
+└── README.md # Project documentation
+
 
 ---
 
