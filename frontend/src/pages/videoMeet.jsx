@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/videoMeet.css";
 
-import { TextField, Button, IconButton, Badge } from "@mui/material";
+import { Button, IconButton, Badge } from "@mui/material";
 import io from "socket.io-client";
 import VideocamIcon from "@mui/icons-material/Videocam";
 import VideocamOffIcon from "@mui/icons-material/VideocamOff";
@@ -12,11 +12,9 @@ import MicOffIcon from "@mui/icons-material/MicOff";
 import ScreenShareIcon from "@mui/icons-material/ScreenShare";
 import StopScreenShareIcon from "@mui/icons-material/StopScreenShare";
 import ChatIcon from "@mui/icons-material/Chat";
-import Fab from "@mui/material/Fab";
 import SendIcon from "@mui/icons-material/Send";
-import server from "../environment";
 
-const server_url = server;
+const server_url = process.env.server_url;
 var connections = {};
 
 const peerConfigConnections = {
