@@ -14,7 +14,7 @@ import StopScreenShareIcon from "@mui/icons-material/StopScreenShare";
 import ChatIcon from "@mui/icons-material/Chat";
 import SendIcon from "@mui/icons-material/Send";
 
-const server_url = process.env.server_url;
+const server_url = process.env.REACT_APP_SERVER_URL;
 var connections = {};
 
 const peerConfigConnections = {

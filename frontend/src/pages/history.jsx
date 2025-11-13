@@ -49,7 +49,7 @@ export default function History() {
     try {
       const token = localStorage.getItem("token");
       const res = await fetch(
-        `${process.env.server_url}/api/v1/users/delete_activity/${meetingId}?token=${token}`,
+        `${process.env.REACT_APP_SERVER_URL}/api/v1/users/delete_activity/${meetingId}?token=${token}`,
         {
           method: "DELETE",
         }
