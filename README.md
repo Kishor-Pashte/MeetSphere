@@ -4,6 +4,7 @@ MeetSphere is a modern, real-time video conferencing web application built to fa
 
 ---
 
+
 ## Table of Contents
 - [Project Intro](#project-intro)
 - [Features](#features)
@@ -11,15 +12,16 @@ MeetSphere is a modern, real-time video conferencing web application built to fa
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Future Enhancements](#future-enhancements)
 - [Acknowledgements](#acknowledgements)
 
 ---
+
 
 ## Project Intro
 MeetSphere is designed to provide a secure and intuitive platform for online meetings. Users can authenticate, join lobbies, share video and audio, chat in real-time, and manage their meetings efficiently. Each meeting generates a unique room URL that can be shared with participants for easy access.
 
 ---
+
 
 ## Features
 - 🔐 **User Authentication:** Secure login and registration with unique tokens.
@@ -35,6 +37,7 @@ MeetSphere is designed to provide a secure and intuitive platform for online mee
 
 ---
 
+
 ## Tech Stack
 - **Frontend:** React.js, Material-UI, CSS  
 - **Backend:** Node.js, Express.js  
@@ -43,6 +46,7 @@ MeetSphere is designed to provide a secure and intuitive platform for online mee
 - **Authentication:** Token-based Authorization  
 
 ---
+
 
 ## Getting Started
 
@@ -77,6 +81,7 @@ Open http://localhost:3000 in your browser.
 
 ---
 
+
 ## Usage
    - Register or login to the platform.
    - Enter a username to join the lobby.
@@ -86,6 +91,7 @@ Open http://localhost:3000 in your browser.
    - Track your meeting history, delete calls if needed, and safely logout.
 
 ---
+
 
 ## Project Structure
 
@@ -114,14 +120,9 @@ meetsphere/
 
 ---
 
-## Acknowledgements
-- [React.js](https://reactjs.org/) – Frontend framework  
-- [Node.js](https://nodejs.org/) – Backend runtime  
-- [Express.js](https://expressjs.com/) – Web framework for Node.js  
-- [MongoDB](https://www.mongodb.com/) – NoSQL database  
-- [WebRTC](https://webrtc.org/) – Real-time communication API  
-- [Material-UI](https://mui.com/) – UI component library  
-- Inspired by modern video conferencing apps like Zoom and Google Meet
+
+
+
 
 
  
