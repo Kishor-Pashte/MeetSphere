@@ -14,7 +14,9 @@ import StopScreenShareIcon from "@mui/icons-material/StopScreenShare";
 import ChatIcon from "@mui/icons-material/Chat";
 import SendIcon from "@mui/icons-material/Send";
 
-const server_url = process.env.REACT_APP_SERVER_URL;
+// const server_url = process.env.REACT_APP_SERVER_URL;
+const server_url = "https://meetsphere-4fdu.onrender.com";
+
 var connections = {};
 
 const peerConfigConnections = {
@@ -501,7 +503,11 @@ export default function VideoMeet() {
             {showModal ? (
               <div className="chat-room">
                 <div className="chat-container">
-                  <h1 style={{ color: "#fff", opacity: "0.7" }}>Chat</h1>
+                  <h1
+                    style={{ color: "#fff", opacity: "0.7", cursor: "pointer" }}
+                  >
+                    Chat
+                  </h1>
                   <div className="chatting-display">
                     {messages.length > 0 ? (
                       messages.map((item, index) => {
@@ -530,7 +536,7 @@ export default function VideoMeet() {
                       onChange={(e) => setMessage(e.target.value)}
                     />
 
-                    <div className="send-icon" s onClick={sendMessage}>
+                    <div className="send-icon" onClick={sendMessage}>
                       <SendIcon style={{ color: "white" }} />
                     </div>
                   </div>

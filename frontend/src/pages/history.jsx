@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { IconButton } from "@mui/material";
@@ -48,8 +48,15 @@ export default function History() {
   const handleDeleteHistory = async (meetingId) => {
     try {
       const token = localStorage.getItem("token");
+      // const res = await fetch(
+      //   `${process.env.REACT_APP_SERVER_URL}/api/v1/users/delete_activity/${meetingId}?token=${token}`,
+      //   {
+      //     method: "DELETE",
+      //   }
+      // );
+
       const res = await fetch(
-        `${process.env.REACT_APP_SERVER_URL}/api/v1/users/delete_activity/${meetingId}?token=${token}`,
+        `https://meetsphere-4fdu.onrender.com/api/v1/users/delete_activity/${meetingId}?token=${token}`,
         {
           method: "DELETE",
         }
@@ -86,7 +93,7 @@ export default function History() {
             return (
               <>
                 <div key={id}>
-                  <div className="history-content">
+                  <div className="history-content ">
                     <div
                       style={{
                         display: "flex",

@@ -28,13 +28,9 @@ function HomeComponent() {
             style={{ display: "flex", alignItems: "center" }}
             className="nav-left"
           >
-            <img
-              src="https://mui.com/static/logo.png"
-              alt="Logo"
-              width="35"
-              className="mb-2"
-            />
-            <h3>MeetSphere</h3>
+            <h3 onClick={() => navigate("/home")} style={{ cursor: "pointer" }}>
+              MeetSphere
+            </h3>
           </div>
           <div
             style={{ display: "flex", alignItems: "center" }}
@@ -43,7 +39,11 @@ function HomeComponent() {
             <HistoryIcon
               onClick={() => navigate("/history")}
               className="history-icon"
-              style={{ marginRight: "18px", fontSize: "33px" }}
+              style={{
+                marginRight: "18px",
+                fontSize: "33px",
+                cursor: "pointer",
+              }}
             />
             <Fab
               onClick={() => {

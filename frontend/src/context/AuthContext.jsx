@@ -6,7 +6,8 @@ import httpStatus from "http-status";
 export const AuthContext = createContext({});
 
 const client = axios.create({
-  baseURL: `${process.env.REACT_APP_SERVER_URL}/api/v1/users`,
+  // baseURL: `http://localhost:8000/api/v1/users`,
+  baseURL: `https://meetsphere-4fdu.onrender.com/api/v1/users`,
 });
 
 export const AuthProvider = ({ children }) => {
