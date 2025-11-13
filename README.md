@@ -73,7 +73,7 @@ MeetSphere is designed to provide a secure and intuitive platform for online mee
       cd frontend
       npm start
 
-    Open http://localhost:3000 in your browser.
+Open http://localhost:3000 in your browser.
 
 ---
 
