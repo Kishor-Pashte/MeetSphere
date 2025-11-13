@@ -110,24 +110,18 @@ meetsphere/
 │
 └── README.md  # Project documentation
 
-
+```
 
 ---
 
 ## Acknowledgements
-   - React.js – Frontend framework
-   - Node.js – Backend runtime
-   - Express.js – Web framework for Node.js
-   - MongoDB – NoSQL database
-   - WebRTC – Real-time communication API
-   - Material-UI – UI component library
-   - Inspired by modern video conferencing apps like Zoom and Google Meet
+- [React.js](https://reactjs.org/) – Frontend framework  
+- [Node.js](https://nodejs.org/) – Backend runtime  
+- [Express.js](https://expressjs.com/) – Web framework for Node.js  
+- [MongoDB](https://www.mongodb.com/) – NoSQL database  
+- [WebRTC](https://webrtc.org/) – Real-time communication API  
+- [Material-UI](https://mui.com/) – UI component library  
+- Inspired by modern video conferencing apps like Zoom and Google Meet
 
----
+
  
-
-
-
-
-
-  
